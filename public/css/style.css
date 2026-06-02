@@ -12,7 +12,8 @@ body {
 
 /* Navbar*/
 .navbar {
-    height: 5rem;
+    height: auto;
+    min-height: 5rem;
     background-color: white;
 }
 
@@ -55,12 +56,15 @@ body {
 
 .f-info {
     text-align: center;
-    height: 8rem;
+    height: auto;
+    min-height: 8rem;
+    padding: 1.5rem 0;
     background-color: #ebebeb;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: space-evenly;
+    align-items: center;
+    row-gap: 0.5rem;
 }
 
 /* Cards*/
@@ -130,8 +134,71 @@ body {
 
 /* Map */
 #map {
-   height: 400px;
-   width: 80vh;
-
-
+     height: 400px;
+     width: 100%;
 }
+
+/* Responsive Media Queries */
+@media (max-width: 767.98px) {
+    .search-inp {
+        min-width: unset !important;
+        width: 100% !important;
+        margin-bottom: 0.5rem;
+    }
+    .search-btn {
+        width: 100%;
+    }
+    .navbar-nav {
+        padding: 0.25rem 0;
+    }
+    .nav-link {
+        padding: 0.35rem 0 !important;
+    }
+    .show-img {
+        height: 25vh !important;
+    }
+    #map {
+        height: 300px;
+    }
+}
+
+/* Developer Signature Styling */
+.developer-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #444;
+    margin: 0.2rem 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.developer-info i {
+    margin: 0 0.25rem;
+    animation: heartBeat 1.2s infinite alternate ease-in-out;
+}
+
+.developer-name {
+    margin-left: 0.35rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    background: linear-gradient(45deg, #fe424d, #ff6b6b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.2s ease-in-out;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.developer-name:hover {
+    transform: scale(1.1) rotate(-3deg);
+}
+
+@keyframes heartBeat {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.25); }
+}
+
+/* end of file */
