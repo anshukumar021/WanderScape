@@ -6,6 +6,8 @@ Wanderlust is a full-stack travel marketplace inspired by Airbnb, designed to he
 
 Built with modern web technologies, the platform focuses on seamless user experience, secure authentication, interactive location discovery, and real-world deployment practices.
 
+link:- https://wanderscape-nkz7.onrender.com/listings
+
 ---
 
 ## ✨ Why Wanderlust?
