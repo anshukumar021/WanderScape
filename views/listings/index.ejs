@@ -90,89 +90,96 @@
     }
   </style>
 
-  <div id="filters">
-    <div class="filter-options">
-      <div class="filter <%= typeof category !== 'undefined' && category === 'Trending' ? 'active-filter' : '' %>" onclick="filterByCategory('Trending')">
-      <div>
-        <i class="fa-solid fa-fire"></i>
+  <!-- Filters Toggle Button for Mobile -->
+  <button class="btn btn-outline-dark d-md-none w-100 mb-2 py-2 d-flex align-items-center justify-content-center gap-2" type="button" data-bs-toggle="collapse" data-bs-target="#filtersCollapse" aria-expanded="false" aria-controls="filtersCollapse" style="border-radius: 10px; font-weight: 600; border-color: #dddddd; font-size: 0.9rem;">
+    <i class="fa-solid fa-sliders"></i> Toggle Category Filters
+  </button>
+
+  <div class="collapse d-md-block" id="filtersCollapse">
+    <div id="filters">
+      <div class="filter-options">
+        <div class="filter <%= typeof category !== 'undefined' && category === 'Trending' ? 'active-filter' : '' %>" onclick="filterByCategory('Trending')">
+        <div>
+          <i class="fa-solid fa-fire"></i>
+        </div>
+        <p>Trending</p>
       </div>
-      <p>Trending</p>
-    </div>
 
-    <div class="filter <%= typeof category !== 'undefined' && category === 'Rooms' ? 'active-filter' : '' %>" onclick="filterByCategory('Rooms')">
-      <div>
-        <i class="fa-solid fa-bed"></i>
+      <div class="filter <%= typeof category !== 'undefined' && category === 'Rooms' ? 'active-filter' : '' %>" onclick="filterByCategory('Rooms')">
+        <div>
+          <i class="fa-solid fa-bed"></i>
+        </div>
+        <p>Rooms</p>
       </div>
-      <p>Rooms</p>
-    </div>
 
-    <div class="filter <%= typeof category !== 'undefined' && category === 'Iconic Cities' ? 'active-filter' : '' %>" onclick="filterByCategory('Iconic Cities')">
-      <div>
-        <i class="fa-solid fa-mountain-city"></i>
+      <div class="filter <%= typeof category !== 'undefined' && category === 'Iconic Cities' ? 'active-filter' : '' %>" onclick="filterByCategory('Iconic Cities')">
+        <div>
+          <i class="fa-solid fa-mountain-city"></i>
+        </div>
+        <p>Iconic Cities</p>
       </div>
-      <p>Iconic Cities</p>
-    </div>
 
-    <div class="filter <%= typeof category !== 'undefined' && category === 'Mountains' ? 'active-filter' : '' %>" onclick="filterByCategory('Mountains')">
-      <div>
-        <i class="fa-solid fa-mountain"></i>
+      <div class="filter <%= typeof category !== 'undefined' && category === 'Mountains' ? 'active-filter' : '' %>" onclick="filterByCategory('Mountains')">
+        <div>
+          <i class="fa-solid fa-mountain"></i>
+        </div>
+        <p>Mountains</p>
       </div>
-      <p>Mountains</p>
-    </div>
 
-    <div class="filter <%= typeof category !== 'undefined' && category === 'Castles' ? 'active-filter' : '' %>" onclick="filterByCategory('Castles')">
-      <div>
-        <i class="fa-brands fa-fort-awesome"></i>
+      <div class="filter <%= typeof category !== 'undefined' && category === 'Castles' ? 'active-filter' : '' %>" onclick="filterByCategory('Castles')">
+        <div>
+          <i class="fa-brands fa-fort-awesome"></i>
+        </div>
+        <p>Castles</p>
       </div>
-      <p>Castles</p>
-    </div>
 
-    <div class="filter <%= typeof category !== 'undefined' && category === 'Amazing Pools' ? 'active-filter' : '' %>" onclick="filterByCategory('Amazing Pools')">
-      <div>
-        <i class="fa-solid fa-person-swimming"></i>
+      <div class="filter <%= typeof category !== 'undefined' && category === 'Amazing Pools' ? 'active-filter' : '' %>" onclick="filterByCategory('Amazing Pools')">
+        <div>
+          <i class="fa-solid fa-person-swimming"></i>
+        </div>
+        <p>Amazing Pools</p>
       </div>
-      <p>Amazing Pools</p>
-    </div>
 
-    <div class="filter <%= typeof category !== 'undefined' && category === 'Camping' ? 'active-filter' : '' %>" onclick="filterByCategory('Camping')">
-      <div>
-        <i class="fa-solid fa-campground"></i>
+      <div class="filter <%= typeof category !== 'undefined' && category === 'Camping' ? 'active-filter' : '' %>" onclick="filterByCategory('Camping')">
+        <div>
+          <i class="fa-solid fa-campground"></i>
+        </div>
+        <p>Camping</p>
       </div>
-      <p>Camping</p>
-    </div>
 
-    <div class="filter <%= typeof category !== 'undefined' && category === 'Farms' ? 'active-filter' : '' %>" onclick="filterByCategory('Farms')">
-      <div>
-        <i class="fa-solid fa-tractor"></i>
+      <div class="filter <%= typeof category !== 'undefined' && category === 'Farms' ? 'active-filter' : '' %>" onclick="filterByCategory('Farms')">
+        <div>
+          <i class="fa-solid fa-tractor"></i>
+        </div>
+        <p>Farms</p>
       </div>
-      <p>Farms</p>
-    </div>
 
-    <div class="filter <%= typeof category !== 'undefined' && category === 'Arctic' ? 'active-filter' : '' %>" onclick="filterByCategory('Arctic')">
-      <div>
-        <i class="fa-solid fa-snowflake"></i>
+      <div class="filter <%= typeof category !== 'undefined' && category === 'Arctic' ? 'active-filter' : '' %>" onclick="filterByCategory('Arctic')">
+        <div>
+          <i class="fa-solid fa-snowflake"></i>
+        </div>
+        <p>Arctic</p>
       </div>
-      <p>Arctic</p>
-    </div>
 
-    <div class="filter <%= typeof category !== 'undefined' && category === 'Domes' ? 'active-filter' : '' %>" onclick="filterByCategory('Domes')">
-      <div>
-       <i class="fa-solid fa-igloo"></i>
+      <div class="filter <%= typeof category !== 'undefined' && category === 'Domes' ? 'active-filter' : '' %>" onclick="filterByCategory('Domes')">
+        <div>
+          <i class="fa-solid fa-igloo"></i>
+        </div>
+        <p>Domes</p>
       </div>
-      <p>Domes</p>
-    </div>
 
-    </div>
+      </div>
 
-    <div class="tax-toggle">
-      <div class="form-check-reverse form-switch">
-        <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
-        <label class="form-check-label" for="switchCheckDefault">Display total after taxes</label>
+      <div class="tax-toggle">
+        <div class="form-check-reverse form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
+          <label class="form-check-label" for="switchCheckDefault">Display total after taxes</label>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 mt-3">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-3">
     <% if (allListings.length === 0) { %>
       <div class="col-12 text-center mt-5">
         <i class="fa-regular fa-face-frown" style="font-size: 3rem; color: #fe424d; margin-bottom: 1rem; display: block;"></i>
@@ -190,7 +197,11 @@
               <p class="card-text">
                 <b>
                   <%= listing.title %>
-                </b> <br />
+                </b>
+                <br />
+                <!-- Mobile Only Metadata -->
+                <span class="card-metadata d-md-none text-muted" style="font-size: 0.78rem; display: block; margin-top: 2px; margin-bottom: 2px;">Entire home &bull; 4 guests &bull; 2 beds</span>
+                
                 &#8377; <%= listing.price ? listing.price.toLocaleString("en-IN") : "N/A" %> /night
                 <i class="tax-info">&nbsp; &nbsp;+18% GST</i>
               </p>
